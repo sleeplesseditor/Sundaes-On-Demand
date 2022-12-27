@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "server": "npm run start --prefix server",
-    "server_setup": "npm run install --prefix server",
+    "server_setup": "npm install --prefix server",
     "client": "npm run start --prefix client",
-    "client_setup": "npm run install --prefix client",
+    "client_setup": "npm install --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "setup": "concurrently \"npm run server_setup\" \"npm run client_setup\""
   },
