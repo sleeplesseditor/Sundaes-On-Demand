@@ -6,13 +6,17 @@ import { formatCurrency } from "../../utilities";
 export default function OrderEntry({ setOrderPhase }) {
   const { totals } = useOrderDetails();
 
+  const orderDisabled = totals.scoops === 0;
+
   return (
     <div>
       <h1>Desing your Sundae!</h1>
       <Options optionsType="scoops" />
       <Options optionsType="toppings" />
       <h2>Grand total: {formatCurrency(totals.scoops + totals.toppings)}</h2>
-      <Button onClick={() => setOrderPhase("review")}>Order Sundae!</Button>
+      <Button disabled={orderDisabled} onClick={() => setOrderPhase("review")}>
+        Order Sundae!
+      </Button>
     </div>
   );
 }
