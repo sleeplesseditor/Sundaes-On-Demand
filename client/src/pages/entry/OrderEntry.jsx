@@ -1,3 +1,4 @@
+import Button from "react-bootstrap/Button";
 import Options from "./Options";
 import { useOrderDetails } from "../../contexts/OrderDetails";
 import { formatCurrency } from "../../utilities";
@@ -11,6 +12,7 @@ export default function OrderEntry({ setOrderPhase }) {
       <Options optionsType="scoops" />
       <Options optionsType="toppings" />
       <h2>Grand total: {formatCurrency(totals.scoops + totals.toppings)}</h2>
+      <Button onClick={() => setOrderPhase("review")}>Order Sundae!</Button>
     </div>
   );
 }
