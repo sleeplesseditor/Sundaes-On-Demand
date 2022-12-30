@@ -16,3 +16,6 @@ Installs the necessary dependencies for both the server and the client parts of 
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+![Screenshot 2022-12-30 at 00 55 55](https://user-images.githubusercontent.com/25869284/210024534-2727521c-b460-48cd-aa54-700f24b16575.png)
+An example screenshot of the app running

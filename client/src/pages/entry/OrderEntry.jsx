@@ -10,7 +10,7 @@ export default function OrderEntry({ setOrderPhase }) {
 
   return (
     <div>
-      <h1>Desing your Sundae!</h1>
+      <h1>Design your Sundae!</h1>
       <Options optionsType="scoops" />
       <Options optionsType="toppings" />
       <h2>Grand total: {formatCurrency(totals.scoops + totals.toppings)}</h2>
